@@ -1,0 +1,50 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<div class="container">
+  <div class="card">
+    <h2>Welcome to HeartCare</h2>
+    <p>
+      Your comprehensive tool for heart attack awareness, prevention, and
+      prediction.
+    </p>
+
+    <div
+      class="card"
+      style="
+        background-color: var(--primary-blue);
+        padding: 2rem;
+        margin-top: 2rem;
+      "
+    >
+      <h3 style="color: var(--dark-blue)">Quick Access</h3>
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 1rem;
+          margin-top: 1rem;
+        "
+      >
+        <a
+          href="{{ url_for('symptoms') }}"
+          class="btn"
+          style="background-color: var(--white); color: var(--dark-blue)"
+          >Symptoms & First Aid</a
+        >
+        <a
+          href="{{ url_for('emergency') }}"
+          class="btn"
+          style="background-color: var(--white); color: var(--dark-blue)"
+          >Emergency Contacts</a
+        >
+        <a
+          href="{{ url_for('prediction') }}"
+          class="btn"
+          style="background-color: var(--white); color: var(--dark-blue)"
+          >Risk Prediction</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

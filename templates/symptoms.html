@@ -1,0 +1,78 @@
+{% extends "base.html" %} {% block title %}Symptoms & First Aid{% endblock %} {%
+block content %}
+<div class="container">
+  <div class="card">
+    <h2>Heart Attack Symptoms</h2>
+
+    <div
+      class="card"
+      style="
+        background-color: #e3f2fd;
+        border-left: 4px solid var(--primary-blue);
+      "
+    >
+      <h3 style="color: var(--dark-blue)">Common Symptoms:</h3>
+      <ul>
+        <li>
+          <strong>Chest pain or discomfort</strong> (pressure, squeezing,
+          fullness)
+        </li>
+        <li>
+          <strong>Pain or discomfort</strong> in arms, back, neck, jaw, or
+          stomach
+        </li>
+        <li>
+          <strong>Shortness of breath</strong> with or without chest discomfort
+        </li>
+        <li><strong>Cold sweat</strong></li>
+        <li><strong>Nausea or vomiting</strong></li>
+        <li><strong>Lightheadedness</strong> or sudden dizziness</li>
+      </ul>
+
+      <div class="alert alert-danger">
+        <strong>Note:</strong> Symptoms can vary between men and women. Women
+        are more likely to experience shortness of breath, nausea/vomiting, and
+        back or jaw pain.
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem">
+      <h2 style="color: var(--dark-blue)">First Aid Measures</h2>
+
+      <h3>If you suspect someone is having a heart attack:</h3>
+      <ol>
+        <li>
+          <strong>Call emergency services immediately</strong> (911 or your
+          local emergency number)
+        </li>
+        <li>Help the person sit down and rest in a comfortable position</li>
+        <li>Loosen any tight clothing</li>
+        <li>Ask if they take chest pain medication (like nitroglycerin)</li>
+        <li>
+          If the person is unconscious, <strong>begin CPR</strong> if you're
+          trained
+        </li>
+        <li>
+          If available, <strong>use an AED</strong> (automated external
+          defibrillator)
+        </li>
+        <li>Stay with the person until emergency responders arrive</li>
+      </ol>
+
+      <h3 style="margin-top: 1.5rem">What NOT to do:</h3>
+      <ul>
+        <li>Don't leave the person alone</li>
+        <li>
+          Don't allow the person to deny symptoms and convince you not to call
+          for help
+        </li>
+        <li>Don't wait to see if symptoms go away</li>
+        <li>
+          Don't give the person anything by mouth unless prescribed heart
+          medication
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends "base.html" %} {% block title %}Emergency Contacts{% endblock %} {%
+block content %}
+<div class="container">
+  <div class="card">
+    <h2>Emergency Contacts</h2>
+
+    <div
+      class="card"
+      style="background-color: #ffebee; border-left: 4px solid var(--alert-red)"
+    >
+      <h3 style="color: var(--alert-red)">In Case of Emergency</h3>
+      <p>
+        If you or someone else is experiencing heart attack symptoms, call your
+        local emergency number immediately.
+      </p>
+
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 1.5rem;
+          margin-top: 1.5rem;
+        "
+      >
+        <div>
+          <h4>International Emergency Numbers:</h4>
+          <ul>
+            <li><strong>General Emergency:</strong> 123</li>
+            <li><strong>Ambulance:</strong> 123</li>
+            <li><strong>Police:</strong> 122</li>
+            <li><strong>Fire Department:</strong> 180</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Heart Health Hotlines:</h4>
+          <ul>
+            <li>
+              <strong>National Heart Institute (Cairo):</strong> +202 2363 0296
+            </li>
+            <li>
+              <strong>Egyptian Heart Society:</strong>
+              19057
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem">
+      <h3>Emergency Preparedness</h3>
+      <p>Being prepared can save lives. Here's what you should do:</p>
+
+      <ul>
+        <li>Save emergency numbers in your phone</li>
+        <li>
+          Know the location of the nearest hospital with 24-hour emergency
+          cardiac care
+        </li>
+        <li>Learn CPR and basic first aid</li>
+        <li>
+          If you're at risk, carry aspirin (to chew during a suspected heart
+          attack after consulting with emergency services)
+        </li>
+        <li>
+          Inform family members about your medical conditions and medications
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
